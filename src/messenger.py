@@ -65,6 +65,7 @@ class Messenger:
                 tolon = float(travelData['to']['lon'])
             except:
                 print("error converting gps data")
+                return
 
             if -90 <= fromlat <= 90 and -180 <= fromlon <= 180 and -90 <= tolat <= 90 and -180 <= tolon <= 180:
                 fromGPS = {"lat":fromlat,"lon":fromlon}
